@@ -4,6 +4,7 @@ import uuid
 
 class User(models.Model):
     name = models.CharField(max_length=30, verbose_name="Ім'я")
+    last_name = models.CharField(max_length=30, verbose_name="Прізвище")
     email = models.EmailField(unique=True, verbose_name="Email")
     phone = models.CharField(max_length=20, verbose_name="Телефон")
     created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
@@ -12,8 +13,8 @@ class User(models.Model):
         verbose_name = "Користувач"
         verbose_name_plural = "Користувачі"
 
-        def __str__(self):
-            return f"{self.name} - {self.phone}"
+    def __str__(self):
+        return f"{self.name}: {self.phone}"
 
 
 class FitnessClass(models.Model):
@@ -27,8 +28,8 @@ class FitnessClass(models.Model):
         verbose_name = "Заняття / Клас"
         verbose_name_plural = "Заняття / Класи"
 
-        def __str__(self):
-            return self.title
+    def __str__(self):
+        return self.title
 
 
 class Reservation(models.Model):
@@ -54,5 +55,5 @@ class Reservation(models.Model):
         verbose_name_plural = "Бронювання"
         ordering = ['-created_at']
 
-        def __str__(self):
-            return f"{self.user.name} - {self.fitness_class.title} - {self.reser_date.strftime('%Y-%m-%d %H:%M')}"
+    def __str__(self):
+        return f"{self.user.name} - {self.fitness_class.title} - {self.reser_date.strftime('%Y-%m-%d %H:%M')}"

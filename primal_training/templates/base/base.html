@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'primal_training/css/main.css' %}">
+    <title>PrimalTrening</title>
+</head>
+<body>
+    <header class="Header">
+        {% include "includes/Nav.html" %}
+    </header>
+    {% block main %}
+    
+    {% endblock main %}
+    <footer>
+        PrimalTrening
+    </footer>
+</body>
+</html>

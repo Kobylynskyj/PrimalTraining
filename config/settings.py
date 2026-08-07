@@ -11,6 +11,29 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import os
+
+LANGUAGE_CODE = 'uk'
+
+TIME_ZONE = 'Europe/Pargue' 
+
+USE_I18N = True
+USE_TZ = True
+USE_L10N = False
+
+DATE_INPUT_FORMATS = [
+    '%Y-%m-%d', 
+    '%d.%m.%Y', 
+    '%d/%m/%Y',
+]
+
+DATETIME_INPUT_FORMATS = [
+    '%Y-%m-%d %H:%M:%S',
+    '%Y-%m-%d %H:%M',
+    '%d.%m.%Y %H:%M:%S',
+    '%d.%m.%Y %H:%M',
+]
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,6 +54,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'unfold',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -120,4 +144,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+

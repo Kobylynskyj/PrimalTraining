@@ -1,0 +1,64 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #EAEFFA; // Світло-блакитний фон
+    border-bottom: 1px solid #000000;
+    padding: 16px 40px;
+
+  nav {
+    display: flex;
+    justify-content: flex-end; // Вирівнює навігацію вправо
+    align-items: center;
+  }
+
+  .ul_list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .list_item {
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    // Стилі для кнопки RESERVE YOUR SPOT
+    &--btn {
+      margin-left: 12px;
+
+      a {
+        display: inline-block;
+        background-color: #7B8CFF; // Синя кнопка
+        color: #000000;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+
+        &:hover {
+          background-color: #697AEF;
+          opacity: 1;
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}
