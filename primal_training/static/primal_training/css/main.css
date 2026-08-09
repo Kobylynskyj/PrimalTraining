@@ -203,3 +203,13 @@
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block;
+  background: #eee;
+  padding: 20px;
+}

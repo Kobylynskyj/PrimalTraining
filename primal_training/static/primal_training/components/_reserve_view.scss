@@ -1,101 +1,3 @@
-// .reserve-title{
-//     font-size: 64px;
-//     text-align: center;
-//     font-weight: 900;
-//     text-transform: uppercase;
-//     margin-bottom: 25px;
-//     color: #1a1a1a;
-//     span{
-//         color: #5b82e6;
-//     }
-// }
-
-// .reserve-subtitle{
-//     font-size: 28px;
-//     text-align: center;
-//     margin-bottom: 20px;
-// }
-// .reserve-section{
-//     width: 100%;
-//     margin: 0px auto;
-// }
-
-// .reserve-grid{
-//     display: grid;
-//     grid-template-columns: repeat(3,1fr);
-//     gap: 15px;
-//     border-top: solid 1px black;
-//     border-bottom: solid 1px black;
-//     background-color: rgb(220, 226, 255);
-// }
-
-// .card{
-//     height: 480px;
-//     padding: 30px 24px;
-//     display: flex;
-//     flex-direction: column;
-//     border-right: solid 1px black;
-
-//     &:last-child{
-//         border-right: none;
-//     }
-// }
-
-// .class-item{
-//     font-size: 26px;
-//     font-weight: 900;
-// }
-
-// .class-description{
-//     margin-top: 50px;
-//     font-size: 18px;
-//     letter-spacing: 1.2;
-//     font-weight: 400;
-// }
-
-// .class-price{
-//     margin-top: 20px;
-//     font-size: 22px;
-//     font-weight: 700;
-// }
-
-// .class-capacity{
-//     margin-top: 20px;
-    
-// }
-
-// .reserve-btn{
-//     background-color: #808DFD;
-//     padding: 10px 10px;
-//     border: none;
-//     display: flex;
-//     justify-content: center;
-    
-//     font-size: 14px;
-//     font-weight: 600;
-//     letter-spacing: 1,2px;
-
-//     &:hover{
-//         background-color: black;
-//         color: aliceblue;
-//         cursor: pointer;
-//     }
-
-//     margin-top: 20px;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .reserve-title {
     font-size: 64px;
@@ -208,6 +110,10 @@ transition: all 0.3s ease-in-out;
     }
 
     &:active {
-        transform: translateY(0); /
+        transform: translateY(0); 
     }
 }
+
+
+.modal { display: none; }
+.modal.active { display: block; background: #eee; padding: 20px; }
