@@ -36,7 +36,7 @@
         <span class="close-btn">&times;</span>
         <h2 id="modalTitle">BOOK A SESSION</h2>
 
-    <form action="{% url 'CREATE_RESERVATION'  %}" method="POST" class="modal-form">
+    <form action="{% url 'CREATE_RESERVATION'  %}" method="POST" class="modal-form" novalidate>
             {% csrf_token %}
             <input type="hidden" name='class_id' id="modalClassId">
 
@@ -62,10 +62,10 @@
 
             <div class="form-field">
                 <label for="id_reser_date">Date & Time</label>
-                <input type="datetime-local" id="id_reser_date" name="Reser_date" required>
+                <input type="datetime-local" id="id_reser_date" name="reser_date" required>
             </div>
 
-            <button type="submit" class="reserve-btn">CONFIRM BOOKING</button>
+            <button type="submit" class="reserve-btn">RESERVE YOUR SPOT</button>
 
     </form>
     </div>
