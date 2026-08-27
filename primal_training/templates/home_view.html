@@ -2,5 +2,97 @@
 {% load static%}
 
 {% block main %}
+    <div class="title-hero-section">
+        <h1 class="title-hero">TRAIN HARD. <span>LIVE BETTER</span></h1>
+    </div>
+
+    <section class="home-hero">
+        
+        <div class="home-hero_image_box">
+            <img src="{% static 'primal_training/Images/image1_section1.png' %}" alt="image1" class="home-hero_img">
+        </div>
+        
+        <div class="home-hero__content">
+            <h1 class="home-hero_title">FOR THE COMMITTED</h1>
+
+            <p class="home-hero_text">
+            Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits.
+            </p>
+            <a href="{% url 'ABOUT AS' %}" class="home-hero_link">ABOUT US</a>
+        </div>
+
+    </section>
+
+    <section class="home-features">
+
+    <div class="home-features__item">
+        <h2 class="home-features__title">GUIDED BY EXPERTS</h2>
+        <p class="home-features__text">
+            We believe in creating a positive environment where you can thrive. 
+            We're here to help you achieve your goals and unlock your full potential.
+        </p>
+    </div>
+
     
+    <div class="home-features__item home-features__item--bordered">
+        <h2 class="home-features__title">DYNAMIC OPEN GYM</h2>
+        <p class="home-features__text">
+            Our facility is the optimal environment for strength training and performance, 
+            fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement.
+        </p>
+    </div>
+
+    
+    <div class="home-features__image-box">
+        <img src="{% static 'primal_training/Images/image2_section1.png' %}" alt="Trainer with rope" class="home-features__img">
+    </div>
+    </section>
+
+    <div class="title-hero-section_second">
+        <h1 class="title-hero">JOIN THE <span>COMMUNITY</span></h1>
+    </div>
+
+
+
+    <section class="home-potential">
+
+        <div class="home-potential__content">
+            <h2 class="home-potential__main-title">DISCOVER YOUR POTENTIAL</h2>
+
+            <div class="home-potential__list">
+                <div class="home-potential__item">
+                    <h3 class="home-potential__item-title">EXPERT COACHING</h3>
+                    <p class="home-potential__item-text">Trainers who are passionate about your progress.</p>
+                </div>
+
+                <div class="home-potential__item">
+                    <h3 class="home-potential__item-title">Results-Driven Programs</h3>
+                    <p class="home-potential__item-text">Workouts that deliver tangible, measurable results.</p>
+                </div>
+
+                <div class="home-potential__item">
+                    <h3 class="home-potential__item-title">A Supportive Tribe</h3>
+                    <p class="home-potential__item-text">A community that pushes you to be your best.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 2-га колонка: Картинка -->
+        <div class="home-potential__image-box">
+            <img src="{% static 'primal_training/Images/image1_section2.png' %}" alt="People squatting with barbells" class="home-potential__img">
+        </div>
+    </section>
+
+
+    <section class="home-primal">
+        <div class="home-primal-content">
+            <p class="home-primal_text">WHAT WE BELIEVE IN</p>
+            <h1 class="home-primal_title">JOIN THE PRIMAL TRIBE TODAY!</h1>
+            
+            <a href="{% url 'RESERVE YOUR SPOT' %}">
+                <button type="button" class="home-porimal__btn">RESERVE YOUR SPOT</button>
+            </a>
+        </div>
+    </section>
 {% endblock main %}

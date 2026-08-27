@@ -1,0 +1,243 @@
+.title-hero-section {
+    width: 100%;
+    padding: 15px 20px;
+    height: auto;
+}
+
+.title-hero {
+    font-size: 64px;
+    font-family:'Inter Tight', sans-serif; 
+    font-weight: 900;
+    span {
+        color: #808DFD;;
+    }
+    text-align: center;
+}
+
+.home-hero{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #000;
+}
+
+
+.home-hero_image_box{
+    width: 100%;
+    height: auto;
+
+    img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.home-hero__content{
+    display: flex;
+    flex-direction: column;
+    background-color: #E9ECFF;
+    padding: 10px 14px;
+    height: auto;
+
+}
+
+.home-hero_title{
+    font-family: 'Inter Tight', sans-serif; 
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+.home-hero_text{
+    margin-top: 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.home-hero_link{
+    margin-top: 30px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+
+.home-features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    
+    height: auto;
+    gap: 1px; 
+    background-color: #000;
+    border-bottom: 1px solid #000;
+}
+
+
+.home-features__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #E9ECFF;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+
+    &--bordered {
+        border-left: 1px solid #000;
+    }
+}
+
+.home-features__title{
+    font-family: 'Inter Tight', sans-serif; 
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+}
+
+
+.home-features__text{
+    margin-top: 90px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 1.2;
+}
+
+
+.title-hero-section_second{
+    width: 100%;
+    padding: 15px 20px;
+    height: auto;
+    border-bottom: 1px solid #000;
+}
+
+
+.home-potential{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #000;
+        justify-content: space-between;
+        background-color: #E9ECFF;
+    }
+
+    &__main-title{
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 40px;
+        border-bottom: 1px solid #000;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__item{
+        padding: 24px 40px;
+        border-bottom: 1px solid #000;
+        
+            &:last-child {
+                    border-bottom: none; 
+                }
+    }
+
+    &__item-title {
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0 0 8px 0;
+        }
+
+        &__item-text {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+
+.home-potential__image-box{
+    width: 100%;
+    height: 100%;
+
+    img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  
+            display: block;
+    }
+}
+
+
+.home-primal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #808CFD;
+    width: 100%;
+    height: 480px;
+    
+}
+.home-primal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+
+}
+.home-primal_text{
+    font-family: I'nter Tight', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.home-primal_title{
+    font-family: 'Inter Tight', sans-serif; 
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.1rem;
+}
+
+.home-porimal__btn{
+    padding: 8px 10px;
+    background-color: #E9ECFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+            background-color: #bcc5fc;          
+        }
+
+    &:active {
+            transform: scale(0.98); 
+        }
+}
