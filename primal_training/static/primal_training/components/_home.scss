@@ -20,6 +20,7 @@
     width: 100%;
     height: auto;
     border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
 }
 
 
@@ -202,7 +203,7 @@
     justify-content: center;
     background-color: #808CFD;
     width: 100%;
-    height: 480px;
+    height: 400px;
     
 }
 .home-primal-content{
@@ -227,17 +228,22 @@
 }
 
 .home-porimal__btn{
-    padding: 8px 10px;
-    background-color: #E9ECFF;
     border: none;
-    border-radius: 6px;
-    font-size: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    &:hover {
-            background-color: #bcc5fc;          
-        }
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    color: #000000;
 
+    &:hover{
+        color: #E9ECFF;
+        background-color: #000000;
+        transform: translateY(-2px);
+        box-shadow: 1px 21px 28px 0px rgba(0, 0, 0, 0.58);
+        cursor: pointer;
+    }
     &:active {
-            transform: scale(0.98); 
-        }
+        transform: scale(0.98); 
+    }
 }
