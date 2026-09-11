@@ -117,3 +117,30 @@ transition: all 0.3s ease-in-out;
 
 .modal { display: none; }
 .modal.active { display: block; background: #eee; padding: 20px; }
+
+
+@media (max-width:828px) {
+    .reserve-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-description {
+        border-bottom: 1px solid #000;
+        padding-bottom: 18px;
+    }
+}
+
+
+@media (max-width:540px) {
+    .reserve-title {
+        font-size: 54px;
+    }
+}
+
+
+@media (max-width:456px) {
+    .reserve-title {
+        font-size: 44px;
+    }
+}
+    

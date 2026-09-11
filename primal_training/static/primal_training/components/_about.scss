@@ -47,7 +47,7 @@
     font-weight: 800;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    margin: 0 0 8px 0;
+    margin: 0 0 20px 0;
 }
 
 .power-bottom_text{
@@ -107,7 +107,7 @@
     font-weight: 800;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    margin: 0 0 8px 0;
+    margin: 0 0 20px 0;
 }
 
 .dynamic-bottom_text{
@@ -206,4 +206,60 @@
     &:active {
             transform: scale(0.98); 
         }
+}
+
+
+@media (max-width: 843px) {
+    .dynamic-bottom_text {
+        font-size: 16px;
+    }
+
+    .power_title {
+        font-size: 35px;
+    }
+
+    .dynamic-title {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 824px) {
+    .about-power {
+        grid-template-columns: 1fr;
+    }
+
+    .about-dynamic{
+        grid-template-columns: 1fr;
+    }
+
+    .power-img img{
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 519px) {
+    .about-power__title {
+        font-size: 25px;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .about-believe__title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 410px) {
+    .about-believe__title {
+        font-size: 35px;
+    }
+
+    .about-title {
+        font-size: 60px;
+    }
 }

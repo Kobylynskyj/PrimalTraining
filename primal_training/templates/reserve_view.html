@@ -3,28 +3,28 @@
 
 {% block main %}
 <section class="reserve-section">
-        <h1 class="reserve-title">BOOK A <span>SESSION</span></h1>
-        <h2 class="reserve-subtitle">Available Classes</h2>
+        <h1 class="reserve-title" data-aos="fade-up">BOOK A <span>SESSION</span></h1>
+        <h2 class="reserve-subtitle" data-aos="fade-up">>Available Classes</h2>
 
-    <div class="reserve-grid">
+    <div class="reserve-grid"data-aos="fade-up">
 
         {% for item in classes %}
             <div class="card">
-                <h3 class="class-item">{{item.title}}</h3>
-                <p class="class-description">{{item.description}}</p>
-                <p class="class-price">{{item.price}}kc</p>
-                <p class="class-capacity"><strong>Places:</strong> {{ item.max_capacity }}</p>
+                <h3 class="class-item" data-aos="fade-up">{{item.title}}</h3>
+                <p class="class-description" data-aos="fade-up">{{item.description}}</p>
+                <p class="class-price" data-aos="fade-up">{{item.price}}kc</p>
+                <p class="class-capacity" data-aos="fade-up"><strong>Places:</strong> {{ item.max_capacity }}</p>
 
                 <!-- 1. ЗМІНЕНА КНОПКА: додали class="open-modal-btn" та data-атрибути -->
                     <button type="button" 
                         class="reserve-btn open-modal-btn" 
                         data-class-id="{{ item.id }}" 
-                        data-class-title="{{ item.title }}">
+                        data-class-title="{{ item.title }}" data-aos="fade-up">
                     RESERVE YOUR SPOT
                 </button>
             </div>
             {%empty%}
-                <p class="no-classes">No available classes at the moment.</p>
+                <p class="no-classes" data-aos="fade-up">No available classes at the moment.</p>
         {% endfor %}
     </div>
 </section>

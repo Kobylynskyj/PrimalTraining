@@ -12,10 +12,19 @@
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="{% static 'primal_training/css/main.css' %}">
     <title>PrimalTrening</title>
-</head>
+    <link rel="stylesheet" href="{% static 'primal_training/css/aos.css' %}" />
+    <script src="/static/primal_training/Js/burger.js" defer></script>
+    <script src="{% static 'primal_training/Js/aos.js' %}"></script>
 <body>
     <header class="Header">
         {% include "includes/Nav.html" %}
+
+        <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    
     </header>
     {% block main %}
     
@@ -56,5 +65,14 @@
 
 
     </footer>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: true,   
+            });
+        });
+    </script>
 </body>
 </html>

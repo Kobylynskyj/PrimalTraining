@@ -66,6 +66,7 @@ iframe{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     gap: 15px;
     align-items: center;
     background-color: #808CFD;
@@ -105,5 +106,38 @@ iframe{
     }
     &:active {
         transform: scale(0.98); 
+    }
+}
+
+
+@media (max-width:656px) {
+    iframe {
+        height: 350px;
+        width: 450px;
+    }
+}
+
+@media (max-width:520px) {
+    .title-primal_tribe {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:504px) {
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width:405px) {
+    .title-touch {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:400px) {
+    .title-primal_tribe {
+        font-size: 35px;
     }
 }
