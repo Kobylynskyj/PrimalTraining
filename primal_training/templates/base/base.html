@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,24 +40,24 @@
 
         <div class="footer-bottom">
             <div class="content-contact">
-                <h2 class="title-content">CONTACT</h2>
-                <p class="email-content-contatct">Email:kobylynskyjd@gmail.com</p>
-                <p class="phone-content-contact">Phone:795-413-691</p>
+                <h2 class="title-content">{% trans 'CONTACT' %}</h2>
+                <p class="email-content-contatct">{% trans 'Email:' %}kobylynskyjd@gmail.com</p>
+                <p class="phone-content-contact">{% trans 'Phone:' %}795-413-691</p>
             </div>
 
 
             <div class="content-hours">
-                <h2 class="title-content">OPENING HOURS</h2>
+                <h2 class="title-content">{% trans 'OPENING HOURS' %}</h2>
                 <div class="hours-grid">
-                <span>MON - FRI</span><span>5:00 - 23:00</span>
-                <span>SATURDAYS</span><span>8:00 - 16:00</span>
-                <span>SUNDAYS</span><span>8:00 - 13:00</span>
-                <span>HOLIDAYS</span><span>8:00 - 16:00</span>
+                <span>{% trans 'MON - FRI' %}</span><span>5:00 - 23:00</span>
+                <span>{% trans 'SATURDAYS' %}</span><span>8:00 - 16:00</span>
+                <span>{% trans 'SUNDAYS' %}</span><span>8:00 - 13:00</span>
+                <span>{% trans 'HOLIDAYS' %}</span><span>8:00 - 16:00</span>
                 </div>
             </div>
 
             <div class="content-social">
-                <h2 class="title-content">SOCIAL</h2>
+                <h2 class="title-content">{% trans 'SOCIAL' %}</h2>
                 <a href="https://www.instagram.com/fitness/">Instagram</a>
             </div>
 

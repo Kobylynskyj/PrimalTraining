@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 21:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: .\primal_training\templates\about_view.html:7
+#: .\primal_training\templates\home_view.html:22
+msgid "ABOUT US"
+msgstr "ПРО НАС"
+
+#: .\primal_training\templates\about_view.html:13
+msgid "Tap into Your Primal Power. Forge a Stronger You."
+msgstr "Розкрий свою первинну силу. Створи себе сильнішого."
+
+#: .\primal_training\templates\about_view.html:16
+msgid "OUR VISION"
+msgstr "НАШЕ БАЧЕННЯ"
+
+#: .\primal_training\templates\about_view.html:18
+msgid ""
+"Primal Training is committed to delivering a training experience rooted in "
+"raw strength, functional fitness, and unwavering community support. We "
+"empower our members to tap into their primal power, achieve their goals, and "
+"live a life of strength, resilience, and unwavering determination."
+msgstr ""
+"Primal Training прагне забезпечити тренувальний досвід, заснований на чистій "
+"силі, функціональному фітнесі та непорушній підтримці спільноти. Ми "
+"допомагаємо нашим учасникам розкрити свою первинну силу, досягати цілей та "
+"жити життям, сповненим сили, стійкості та непохитної рішучості."
+
+#: .\primal_training\templates\about_view.html:34
+#: .\primal_training\templates\home_view.html:38
+msgid "DYNAMIC OPEN GYM"
+msgstr "ДИНАМІЧНИЙ ТРЕНАЖЕРНИЙ ЗАЛ"
+
+#: .\primal_training\templates\about_view.html:37
+msgid ""
+"At Primal Training, we strip away the fluff and focus on the fundamentals. "
+"Our expert coaches guide you through intense, functional workouts designed "
+"to build raw strength, resilience, and a body capable of anything."
+msgstr ""
+"У Primal Training ми відкидаємо все зайве та зосереджуємося на базі. Наші "
+"досвідчені тренери проведуть вас через інтенсивні функціональні тренування, "
+"розроблені для розбудови чистої сили, стійкості та тіла, здатного на все."
+
+#: .\primal_training\templates\about_view.html:46
+msgid "WEVE CREATED A SPACE WHERE YOU CAN RECONNECT WITH YOUR PRIMAL SELF."
+msgstr ""
+"МИ СТВОРИЛИ ПРОСТІР, ДЕ ВИ МОЖЕТЕ ВІДНОВИТИ ЗВ'ЯЗОК ЗІ СВОЄЮ ПЕРВИННОЮ "
+"СУТНІСТЮ."
+
+#: .\primal_training\templates\about_view.html:53
+#: .\primal_training\templates\home_view.html:89
+msgid "WHAT WE BELIEVE IN"
+msgstr "ТЕ, У ЩО МИ ВІРИМО"
+
+#: .\primal_training\templates\about_view.html:54
+#: .\primal_training\templates\home_view.html:90
+msgid "JOIN THE PRIMAL TRIBE TODAY!"
+msgstr "ПРИЄДНУЙСЯ ДО ПЛЕМЕНІ PRIMAL ВЖЕ СЬОГОДНІ!"
+
+#: .\primal_training\templates\about_view.html:57
+#: .\primal_training\templates\home_view.html:93
+#: .\primal_training\templates\includes\Nav.html:12
+#: .\primal_training\templates\reserve_view.html:24
+#: .\primal_training\templates\reserve_view.html:70
+msgid "RESERVE YOUR SPOT"
+msgstr "ЗАБРОНЮВАТИ МІСЦЕ"
+
+#: .\primal_training\templates\base\base.html:43
+msgid "CONTACT"
+msgstr "КОНТАКТИ"
+
+#: .\primal_training\templates\base\base.html:44
+#: .\primal_training\templates\contacts_view.html:24
+msgid "Email:"
+msgstr "Email:"
+
+#: .\primal_training\templates\base\base.html:45
+#: .\primal_training\templates\contacts_view.html:25
+msgid "Phone:"
+msgstr "Тел:"
+
+#: .\primal_training\templates\base\base.html:50
+msgid "OPENING HOURS"
+msgstr "ГОДИНИ РОБОТИ"
+
+#: .\primal_training\templates\base\base.html:52
+msgid "MON - FRI"
+msgstr "ПН - ПТ"
+
+#: .\primal_training\templates\base\base.html:53
+msgid "SATURDAYS"
+msgstr "СУБОТА"
+
+#: .\primal_training\templates\base\base.html:54
+msgid "SUNDAYS"
+msgstr "НЕДІЛЯ"
+
+#: .\primal_training\templates\base\base.html:55
+msgid "HOLIDAYS"
+msgstr "СВЯТА"
+
+#: .\primal_training\templates\base\base.html:60
+msgid "SOCIAL"
+msgstr "СОЦМЕРЕЖІ"
+
+#: .\primal_training\templates\contacts_view.html:7
+msgid "GET IN"
+msgstr "ЗВ'ЯЖІТЬСЯ"
+
+#: .\primal_training\templates\contacts_view.html:7
+msgid "TOUCH"
+msgstr "З НАМИ"
+
+#: .\primal_training\templates\contacts_view.html:12
+msgid "READY TO JOIN THE PRIMAL TRIBE"
+msgstr "ГОТОВІ ПРИЄДНАТИСЯ ДО СПІЛЬНОТИ PRIMAL"
+
+#: .\primal_training\templates\contacts_view.html:15
+msgid "BOOK FREE INTRO SESSION"
+msgstr "ЗАБРОНЮВАТИ БЕЗКОШТОВНЕ ВСТУПНЕ ТРЕНУВАННЯ"
+
+#: .\primal_training\templates\contacts_view.html:22
+msgid "OUR GYM"
+msgstr "НАШ ЗАЛ"
+
+#: .\primal_training\templates\contacts_view.html:23
+msgid "Addres Street Rad"
+msgstr "Адреса: вул. Рад"
+
+#: .\primal_training\templates\home_view.html:7
+msgid "TRAIN HARD."
+msgstr "ТРЕНУЙСЯ ЖОРСТКО."
+
+#: .\primal_training\templates\home_view.html:7
+msgid "LIVE BETTER"
+msgstr "ЖИВИ КРАЩЕ"
+
+#: .\primal_training\templates\home_view.html:17
+msgid "FOR THE COMMITTED"
+msgstr "ПРИЄДНУЙСЯ ДО СПІЛЬНОТИ"
+
+#: .\primal_training\templates\home_view.html:20
+msgid ""
+"Train like an athlete with top-tier equipment and expert programming. "
+"Whether you re building muscle or breaking PRs, we help you push past limits."
+msgstr ""
+"Тренуйся як атлет із найкращим обладнанням та професійними програмами. "
+"Незалежно від того, чи будуєш ти м'язи, чи долаєш власні рекорди, ми "
+"допоможемо вийти за межі можливого."
+
+#: .\primal_training\templates\home_view.html:30
+msgid "GUIDED BY EXPERTS"
+msgstr "ПІД КЕРІВНИЦТВОМ ЕКСПЕРТІВ"
+
+#: .\primal_training\templates\home_view.html:32
+msgid ""
+"We believe in creating a positive environment where you can thrive. Were "
+"here to help you achieve your goals and unlock your full potential."
+msgstr ""
+"Ми віримо у створення позитивної атмосфери, де ви зможете розвиватися. Ми "
+"тут, щоб допомогти вам досягти своїх цілей та розкрити свій потенціал."
+
+#: .\primal_training\templates\home_view.html:40
+msgid ""
+"Our facility is the optimal environment for strength training and "
+"performance, fully equipped with top-of-the-line tools, ample training "
+"areas, and a focus on functional movement."
+msgstr ""
+"Наш зал — це ідеальне середовище для силових тренувань та досягнення "
+"результатів. Він повністю обладнаний сучасним інвентарем, просторими зонами "
+"для тренувань із акцентом на функціональний рух."
+
+#: .\primal_training\templates\home_view.html:51
+msgid "JOIN THE"
+msgstr "ПРИЄДНУЙСЯ ДО"
+
+#: .\primal_training\templates\home_view.html:51
+msgid "COMMUNITY"
+msgstr "СПІЛЬНОТИ"
+
+#: .\primal_training\templates\home_view.html:59
+msgid "DISCOVER YOUR POTENTIAL"
+msgstr "РОЗКРИЙ СВІЙ ПОТЕНЦІАЛ"
+
+#: .\primal_training\templates\home_view.html:63
+msgid "EXPERT COACHING"
+msgstr "ПРОФЕСІЙНИЙ ТРЕНІНГ"
+
+#: .\primal_training\templates\home_view.html:64
+msgid "Trainers who are passionate about your progress."
+msgstr "Тренери, які щиро зацікавлені у вашому прогресі."
+
+#: .\primal_training\templates\home_view.html:68
+msgid "Results-Driven Programs"
+msgstr "Програми, орієнтовані на результат"
+
+#: .\primal_training\templates\home_view.html:69
+msgid "Workouts that deliver tangible, measurable results."
+msgstr "Тренування, які дають відчутні та вимірювані результати."
+
+#: .\primal_training\templates\home_view.html:73
+msgid "A Supportive Tribe"
+msgstr "Спільнота, яка підтримує"
+
+#: .\primal_training\templates\home_view.html:74
+msgid "A community that pushes you to be your best."
+msgstr "Оточення, яке мотивує вас ставати кращими."
+
+# Навігаційне меню (Header / Nav.html)
+#: .\primal_training\templates\includes\Nav.html:9
+msgid "HOME"
+msgstr "ГОЛОВНА"
+
+#: .\primal_training\templates\includes\Nav.html:10
+msgid "ABOUT"
+msgstr "ПРО НАС"
+
+#: .\primal_training\templates\includes\Nav.html:11
+msgid "CONTACTS"
+msgstr "КОНТАКТИ"
+
+#: .\primal_training\templates\reserve_view.html:7
+msgid "BOOK A"
+msgstr "ЗАБРОНЮВАТИ"
+
+#: .\primal_training\templates\reserve_view.html:7
+msgid "SESSION"
+msgstr "ТРЕНУВАННЯ"
+
+#: .\primal_training\templates\reserve_view.html:8
+msgid "Available Classes"
+msgstr "Доступні заняття"
+
+#: .\primal_training\templates\reserve_view.html:17
+msgid "Places:"
+msgstr "Місць:"
+
+#: .\primal_training\templates\reserve_view.html:28
+msgid "No available classes at the moment."
+msgstr "Наразі немає доступних занять."
+
+#: .\primal_training\templates\reserve_view.html:39
+msgid "BOOK A SESSION"
+msgstr "ЗАБРОНЮВАТИ ТРЕНУВАННЯ"
+
+#: .\primal_training\templates\reserve_view.html:46
+msgid "First Name"
+msgstr "Ім'я"
+
+#: .\primal_training\templates\reserve_view.html:51
+msgid "Last Name"
+msgstr "Прізвище"
+
+#: .\primal_training\templates\reserve_view.html:56
+msgid "Email"
+msgstr "Email"
+
+#: .\primal_training\templates\reserve_view.html:61
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\primal_training\templates\reserve_view.html:66
+msgid "Date & Time"
+msgstr "Дата та час"
+
+#~ msgid " LIVE BETTER "
+#~ msgstr "ЖИВИ КРАЩЕ"
+
+#~ msgid "TAP INTO YOUR PRIMAL POWER. FORGE A STRONGER YOU."
+#~ msgstr "РОЗКРИЙ СВОЮ ПЕРВИННУ СИЛУ. СТВОРИ СЕБЕ СИЛЬНІШОГО."

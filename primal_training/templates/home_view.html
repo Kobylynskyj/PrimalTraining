@@ -1,9 +1,10 @@
 {% extends "base/base.html" %}
 {% load static%}
+{% load i18n %}
 
 {% block main %}
     <div class="title-hero-section">
-        <h1 class="title-hero">TRAIN HARD. <span>LIVE BETTER</span></h1>
+        <h1 class="title-hero">{% trans "TRAIN HARD." %} <span>{% trans "LIVE BETTER" %}</span></h1>
     </div>
 
     <section class="home-hero">
@@ -13,12 +14,12 @@
         </div>
         
         <div class="home-hero__content" data-aos="fade-left">
-            <h1 class="home-hero_title">FOR THE COMMITTED</h1>
+            <h1 class="home-hero_title"> {% trans "FOR THE COMMITTED" %}</h1>
 
             <p class="home-hero_text">
-            Train like an athlete with top-tier equipment and expert programming. Whether you're building muscle or breaking PRs, we help you push past limits.
+            {% trans 'Train like an athlete with top-tier equipment and expert programming. Whether you re building muscle or breaking PRs, we help you push past limits.' %}
             </p>
-            <a href="{% url 'ABOUT AS' %}" class="home-hero_link">ABOUT US</a>
+            <a href="{% url 'ABOUT AS' %}" class="home-hero_link"> {% trans 'ABOUT US' %}</a>
         </div>
 
     </section>
@@ -26,19 +27,17 @@
     <section class="home-features">
 
     <div class="home-features__item" data-aos="fade-down">
-        <h2 class="home-features__title" data-aos="fade-down">GUIDED BY EXPERTS</h2>
+        <h2 class="home-features__title" data-aos="fade-down">{% trans 'GUIDED BY EXPERTS' %}</h2>
         <p class="home-features__text" data-aos="fade-down">
-            We believe in creating a positive environment where you can thrive. 
-            We're here to help you achieve your goals and unlock your full potential.
+            {% trans 'We believe in creating a positive environment where you can thrive. Were here to help you achieve your goals and unlock your full potential.' %}
         </p>
     </div>
 
     
     <div class="home-features__item home-features__item--bordered" data-aos="fade-up">
-        <h2 class="home-features__title" data-aos="fade-up">DYNAMIC OPEN GYM</h2>
+        <h2 class="home-features__title" data-aos="fade-up"> {%trans 'DYNAMIC OPEN GYM' %}</h2>
         <p class="home-features__text" data-aos="fade-up">
-            Our facility is the optimal environment for strength training and performance, 
-            fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement.
+        {% trans 'Our facility is the optimal environment for strength training and performance, fully equipped with top-of-the-line tools, ample training areas, and a focus on functional movement.' %}
         </p>
     </div>
 
@@ -49,7 +48,7 @@
     </section>
 
     <div class="title-hero-section_second" data-aos="fade-up">
-        <h1 class="title-hero">JOIN THE <span>COMMUNITY</span></h1>
+        <h1 class="title-hero">{% trans 'JOIN THE' %} <span>{% trans 'COMMUNITY' %}</span></h1>
     </div>
 
 
@@ -57,22 +56,22 @@
     <section class="home-potential" data-aos="fade-up">
 
         <div class="home-potential__content" data-aos="fade-up">
-            <h2 class="home-potential__main-title" data-aos="fade-up">DISCOVER YOUR POTENTIAL</h2>
+            <h2 class="home-potential__main-title" data-aos="fade-up"> {% trans 'DISCOVER YOUR POTENTIAL' %}</h2>
 
             <div class="home-potential__list">
                 <div class="home-potential__item"data-aos="fade-up">
-                    <h3 class="home-potential__item-title" data-aos="fade-up">EXPERT COACHING</h3>
-                    <p class="home-potential__item-text" data-aos="fade-up">Trainers who are passionate about your progress.</p>
+                    <h3 class="home-potential__item-title" data-aos="fade-up">{% trans 'EXPERT COACHING' %}</h3>
+                    <p class="home-potential__item-text" data-aos="fade-up">{% trans 'Trainers who are passionate about your progress.' %}</p>
                 </div>
 
                 <div class="home-potential__item">
-                    <h3 class="home-potential__item-title" data-aos="fade-up">Results-Driven Programs</h3>
-                    <p class="home-potential__item-text" data-aos="fade-up">Workouts that deliver tangible, measurable results.</p>
+                    <h3 class="home-potential__item-title" data-aos="fade-up">{% trans 'Results-Driven Programs' %}</h3>
+                    <p class="home-potential__item-text" data-aos="fade-up">{% trans 'Workouts that deliver tangible, measurable results.' %}</p>
                 </div>
 
                 <div class="home-potential__item">
-                    <h3 class="home-potential__item-title" data-aos="fade-up">A Supportive Tribe</h3>
-                    <p class="home-potential__item-text" data-aos="fade-up">A community that pushes you to be your best.</p>
+                    <h3 class="home-potential__item-title" data-aos="fade-up">{% trans 'A Supportive Tribe' %}</h3>
+                    <p class="home-potential__item-text" data-aos="fade-up">{% trans 'A community that pushes you to be your best.' %}</p>
                 </div>
             </div>
 
@@ -87,11 +86,11 @@
 
     <section class="home-primal" data-aos="fade-up">
         <div class="home-primal-content" >
-            <p class="home-primal_text" data-aos="fade-up">WHAT WE BELIEVE IN</p>
-            <h1 class="home-primal_title" data-aos="fade-up">JOIN THE PRIMAL TRIBE TODAY!</h1>
+            <p class="home-primal_text" data-aos="fade-up">{% trans 'WHAT WE BELIEVE IN' %} </p>
+            <h1 class="home-primal_title" data-aos="fade-up">{% trans 'JOIN THE PRIMAL TRIBE TODAY!' %}</h1>
             
             <a href="{% url 'RESERVE YOUR SPOT' %}">
-                <button type="button" class="home-porimal__btn" data-aos="fade-up">RESERVE YOUR SPOT</button>
+                <button type="button" class="home-porimal__btn" data-aos="fade-up">{% trans 'RESERVE YOUR SPOT' %}</button>
             </a>
         </div>
     </section>

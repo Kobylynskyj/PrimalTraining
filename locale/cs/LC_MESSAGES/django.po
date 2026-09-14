@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 21:42+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: .\primal_training\templates\about_view.html:7
+#: .\primal_training\templates\home_view.html:22
+msgid "ABOUT US"
+msgstr "O NÁS"
+
+#: .\primal_training\templates\about_view.html:13
+msgid "Tap into Your Primal Power. Forge a Stronger You."
+msgstr "Probuď svou prapůvodní sílu. Vytvoř své silnější já."
+
+#: .\primal_training\templates\about_view.html:16
+msgid "OUR VISION"
+msgstr "NAŠE VIZE"
+
+#: .\primal_training\templates\about_view.html:18
+msgid ""
+"Primal Training is committed to delivering a training experience rooted in "
+"raw strength, functional fitness, and unwavering community support. We "
+"empower our members to tap into their primal power, achieve their goals, and "
+"live a life of strength, resilience, and unwavering determination."
+msgstr ""
+"Primal Training se zavazuje poskytovat tréninkový zážitek založený na ryzí "
+"síle, funkčním fitness a neotřesitelné podpoře komunity. Pomáháme našim "
+"členům probudit jejich prapůvodní sílu, dosáhnout cílů a žít život plný "
+"síly, odolnosti a neochvějné odhodlanosti."
+
+#: .\primal_training\templates\about_view.html:34
+#: .\primal_training\templates\home_view.html:38
+msgid "DYNAMIC OPEN GYM"
+msgstr "DYNAMICKÝ OPEN GYM"
+
+#: .\primal_training\templates\about_view.html:37
+msgid ""
+"At Primal Training, we strip away the fluff and focus on the fundamentals. "
+"Our expert coaches guide you through intense, functional workouts designed "
+"to build raw strength, resilience, and a body capable of anything."
+msgstr ""
+"V Primal Training odkládáme vše zbytečné a soustředíme se na základy. Naši "
+"zkušení trenéři vás provedou intenzivními funkčními tréninky navrženými tak, "
+"aby vybudovaly ryzí sílu, odolnost a tělo schopné všeho."
+
+#: .\primal_training\templates\about_view.html:46
+msgid "WEVE CREATED A SPACE WHERE YOU CAN RECONNECT WITH YOUR PRIMAL SELF."
+msgstr ""
+"VYTVOŘILI JSME PROSTOR, KDE SE MŮŽETE ZNOVU SPOJIT SE SVÝM PRAPŮVODNÍM JÁ."
+
+#: .\primal_training\templates\about_view.html:53
+#: .\primal_training\templates\home_view.html:89
+msgid "WHAT WE BELIEVE IN"
+msgstr "ČEMU VĚŘÍME"
+
+#: .\primal_training\templates\about_view.html:54
+#: .\primal_training\templates\home_view.html:90
+msgid "JOIN THE PRIMAL TRIBE TODAY!"
+msgstr "PŘIPOJ SE K PRIMAL TRIBE JEŠTĚ DNES!"
+
+#: .\primal_training\templates\about_view.html:57
+#: .\primal_training\templates\home_view.html:93
+#: .\primal_training\templates\includes\Nav.html:12
+#: .\primal_training\templates\reserve_view.html:24
+#: .\primal_training\templates\reserve_view.html:70
+msgid "RESERVE YOUR SPOT"
+msgstr "REZERVUJ SI SVÉ MÍSTO"
+
+#: .\primal_training\templates\base\base.html:43
+msgid "CONTACT"
+msgstr "KONTAKT"
+
+#: .\primal_training\templates\base\base.html:44
+#: .\primal_training\templates\contacts_view.html:24
+msgid "Email:"
+msgstr ""
+
+#: .\primal_training\templates\base\base.html:45
+#: .\primal_training\templates\contacts_view.html:25
+msgid "Phone:"
+msgstr ""
+
+# Години роботи
+#: .\primal_training\templates\base\base.html:50
+msgid "OPENING HOURS"
+msgstr "OTEVÍRACÍ DOBA"
+
+#: .\primal_training\templates\base\base.html:52
+msgid "MON - FRI"
+msgstr "PO - PÁ"
+
+#: .\primal_training\templates\base\base.html:53
+msgid "SATURDAYS"
+msgstr "SOBOTY"
+
+#: .\primal_training\templates\base\base.html:54
+msgid "SUNDAYS"
+msgstr "NEDĚLE"
+
+#: .\primal_training\templates\base\base.html:55
+msgid "HOLIDAYS"
+msgstr "SVÁTKY"
+
+# Соціальні мережі
+#: .\primal_training\templates\base\base.html:60
+msgid "SOCIAL"
+msgstr "SOCIÁLNÍ SÍTĚ"
+
+#: .\primal_training\templates\contacts_view.html:7
+msgid "GET IN"
+msgstr "KONTAKTUJTE"
+
+#: .\primal_training\templates\contacts_view.html:7
+msgid "TOUCH"
+msgstr "NÁS"
+
+# Центральний блок CTA
+#: .\primal_training\templates\contacts_view.html:12
+msgid "READY TO JOIN THE PRIMAL TRIBE"
+msgstr "JSI PRIPRAVEN PŘIPOJIT SE K PRIMAL TRIBE"
+
+#: .\primal_training\templates\contacts_view.html:15
+msgid "BOOK FREE INTRO SESSION"
+msgstr "REZERVUJ SI ÚVODNÍ LEKCI ZDARMA"
+
+# Блок OUR GYM
+#: .\primal_training\templates\contacts_view.html:22
+msgid "OUR GYM"
+msgstr "NAŠE POSILOVNA"
+
+#: .\primal_training\templates\contacts_view.html:23
+msgid "Addres Street Rad"
+msgstr "Adresa: ulice Rad"
+
+#: .\primal_training\templates\home_view.html:7
+msgid "TRAIN HARD."
+msgstr "TRÉNUJ TVRDĚ."
+
+#: .\primal_training\templates\home_view.html:7
+msgid "LIVE BETTER"
+msgstr "ŽIJ LÉPE"
+
+#: .\primal_training\templates\home_view.html:17
+msgid "FOR THE COMMITTED"
+msgstr "PRO ODHODLANÉ"
+
+#: .\primal_training\templates\home_view.html:20
+msgid ""
+"Train like an athlete with top-tier equipment and expert programming. "
+"Whether you re building muscle or breaking PRs, we help you push past limits."
+msgstr ""
+"Trénuj jako atlet s špičkovým vybavením a odborným vedením. Ať už buduješ "
+"svaly nebo překonáváš osobní rekordy, pomůžeme ti posunout tvoje hranice."
+
+#: .\primal_training\templates\home_view.html:30
+msgid "GUIDED BY EXPERTS"
+msgstr "VEDENO ODBORNÍKY"
+
+#: .\primal_training\templates\home_view.html:32
+msgid ""
+"We believe in creating a positive environment where you can thrive. Were "
+"here to help you achieve your goals and unlock your full potential."
+msgstr ""
+"Věříme ve vytváření pozitivního prostředí, ve kterém můžete růst. Jsme tu, "
+"abychom vám pomohli dosáhnout vašich cílů a rozvinout váš plný potenciál."
+
+#: .\primal_training\templates\home_view.html:40
+msgid ""
+"Our facility is the optimal environment for strength training and "
+"performance, fully equipped with top-of-the-line tools, ample training "
+"areas, and a focus on functional movement."
+msgstr ""
+"Naše posilovna je optimálním prostředím pro silový trénink a výkon, plně "
+"vybavená špičkovým náčiním, velkorysými tréninkovými prostory a zaměřením na "
+"funkční pohyb."
+
+#: .\primal_training\templates\home_view.html:51
+msgid "JOIN THE"
+msgstr "PŘIPOJ SE K"
+
+#: .\primal_training\templates\home_view.html:51
+msgid "COMMUNITY"
+msgstr "KOMUNITĚ"
+
+# Секція потенціалу
+#: .\primal_training\templates\home_view.html:59
+msgid "DISCOVER YOUR POTENTIAL"
+msgstr "OBJEV SŮJ POTENCIÁL"
+
+#: .\primal_training\templates\home_view.html:63
+msgid "EXPERT COACHING"
+msgstr "PROFESIONÁLNÍ VEDENÍ"
+
+#: .\primal_training\templates\home_view.html:64
+msgid "Trainers who are passionate about your progress."
+msgstr "Trenéři, kteří žijí vaším pokrokem."
+
+#: .\primal_training\templates\home_view.html:68
+msgid "Results-Driven Programs"
+msgstr "Programy zaměřené na výsledky"
+
+#: .\primal_training\templates\home_view.html:69
+msgid "Workouts that deliver tangible, measurable results."
+msgstr "Tréninky, které přinášejí hmatatelné a měřitelné výsledky."
+
+#: .\primal_training\templates\home_view.html:73
+msgid "A Supportive Tribe"
+msgstr "Podporující komunita"
+
+#: .\primal_training\templates\home_view.html:74
+msgid "A community that pushes you to be your best."
+msgstr "Komunita, která vás posouvá k vašim nejlepším výkonům."
+
+# Навігація
+#: .\primal_training\templates\includes\Nav.html:9
+msgid "HOME"
+msgstr "DOMŮ"
+
+#: .\primal_training\templates\includes\Nav.html:10
+msgid "ABOUT"
+msgstr "O NÁS"
+
+#: .\primal_training\templates\includes\Nav.html:11
+msgid "CONTACTS"
+msgstr "KONTAKTY"
+
+#: .\primal_training\templates\reserve_view.html:7
+#, fuzzy
+#| msgid "BOOK A SESSION"
+msgid "BOOK A"
+msgstr "REZERVOVAT LEKCI"
+
+#: .\primal_training\templates\reserve_view.html:7
+#, fuzzy
+#| msgid "BOOK A SESSION"
+msgid "SESSION"
+msgstr "REZERVOVAT LEKCI"
+
+#: .\primal_training\templates\reserve_view.html:8
+msgid "Available Classes"
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:17
+msgid "Places:"
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:28
+msgid "No available classes at the moment."
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:39
+msgid "BOOK A SESSION"
+msgstr "REZERVOVAT LEKCI"
+
+#: .\primal_training\templates\reserve_view.html:46
+msgid "First Name"
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:51
+msgid "Last Name"
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:56
+msgid "Email"
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:61
+msgid "Phone"
+msgstr ""
+
+#: .\primal_training\templates\reserve_view.html:66
+msgid "Date & Time"
+msgstr ""
+
+#, fuzzy
+#~| msgid "LIVE BETTER"
+#~ msgid " LIVE BETTER. "
+#~ msgstr "ŽIJ LÉPE"
+
+#~ msgid "Email: kobylynskyjd@gmail.com"
+#~ msgstr "Email: kobylynskyjd@gmail.com"
+
+#~ msgid "Phone: 795-413-691"
+#~ msgstr "Telefon: 795-413-691"
+
+#~ msgid "TAP INTO YOUR PRIMAL POWER. FORGE A STRONGER YOU."
+#~ msgstr "PROBUĎ SVOU PRAPŮVODNÍ SÍLU. VYTVOŘ SVÉ SILNĚJŠÍ JÁ."
+
+#~ msgid "Email: primaltrening@icloud.com"
+#~ msgstr "Email: primaltrening@icloud.com"
+
+#~ msgid "Phone: +420777899456"
+#~ msgstr "Telefon: +420777899456"

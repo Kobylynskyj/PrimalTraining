@@ -1,30 +1,31 @@
 {% extends "base/base.html" %}
 {%load static%}
+{% load i18n %}
 
 {% block main %}
 <section class="reserve-section">
-        <h1 class="reserve-title" data-aos="fade-up">BOOK A <span>SESSION</span></h1>
-        <h2 class="reserve-subtitle" data-aos="fade-up">>Available Classes</h2>
+        <h1 class="reserve-title" data-aos="fade-up">{% trans 'BOOK A' %} <span>{% trans 'SESSION' %}</span></h1>
+        <h2 class="reserve-subtitle" data-aos="fade-up">{% trans 'Available Classes' %}</h2>
 
     <div class="reserve-grid"data-aos="fade-up">
 
         {% for item in classes %}
             <div class="card">
-                <h3 class="class-item" data-aos="fade-up">{{item.title}}</h3>
-                <p class="class-description" data-aos="fade-up">{{item.description}}</p>
+                <h3 class="class-item" data-aos="fade-up">  {{item.title}} </h3>
+                <p class="class-description" data-aos="fade-up"> {{item.description}} </p>
                 <p class="class-price" data-aos="fade-up">{{item.price}}kc</p>
-                <p class="class-capacity" data-aos="fade-up"><strong>Places:</strong> {{ item.max_capacity }}</p>
+                <p class="class-capacity" data-aos="fade-up"><strong>{% trans 'Places:' %}</strong> {{ item.max_capacity }}</p>
 
-                <!-- 1. ЗМІНЕНА КНОПКА: додали class="open-modal-btn" та data-атрибути -->
+                
                     <button type="button" 
                         class="reserve-btn open-modal-btn" 
                         data-class-id="{{ item.id }}" 
                         data-class-title="{{ item.title }}" data-aos="fade-up">
-                    RESERVE YOUR SPOT
+                    {% trans 'RESERVE YOUR SPOT' %}
                 </button>
             </div>
             {%empty%}
-                <p class="no-classes" data-aos="fade-up">No available classes at the moment.</p>
+                <p class="no-classes" data-aos="fade-up">{% trans 'No available classes at the moment.' %}</p>
         {% endfor %}
     </div>
 </section>
@@ -34,38 +35,38 @@
 <div id="reservationModal" class="modal"> 
     <div class="modal-content">
         <span class="close-btn">&times;</span>
-        <h2 id="modalTitle">BOOK A SESSION</h2>
+        <h2 id="modalTitle">{% trans 'BOOK A SESSION' %}</h2>
 
     <form action="{% url 'CREATE_RESERVATION'  %}" method="POST" class="modal-form" novalidate>
             {% csrf_token %}
             <input type="hidden" name='class_id' id="modalClassId">
 
             <div class="form-field">
-                <label for="id_name">First Name</label>
+                <label for="id_name">{% trans 'First Name' %}</label>
                 <input type="text" id="id_name" name="name" required placeholder="First name">
             </div>
 
             <div class="form-field">
-                <label for="id_last_name">Last Name</label>
+                <label for="id_last_name">{% trans 'Last Name' %}</label>
                 <input type="text" id="id_last_name" name="last_name" required placeholder="Last name">
             </div>
 
             <div class="form-field">
-                <label for="id_email">Email</label>
+                <label for="id_email">{% trans 'Email' %}</label>
                 <input type="email" id="id_email" name="email" required placeholder="Email">
             </div>
 
             <div class="form-field">
-                <label for="id_phone">Phone</label>
+                <label for="id_phone">{% trans 'Phone' %}</label>
                 <input type="tel" id="id_phone" name="phone" required placeholder="+380...">
             </div>
 
             <div class="form-field">
-                <label for="id_reser_date">Date & Time</label>
+                <label for="id_reser_date">{% trans 'Date & Time' %}</label>
                 <input type="datetime-local" id="id_reser_date" name="reser_date" required>
             </div>
 
-            <button type="submit" class="reserve-btn">RESERVE YOUR SPOT</button>
+            <button type="submit" class="reserve-btn">{% trans 'RESERVE YOUR SPOT' %}</button>
 
     </form>
     </div>
