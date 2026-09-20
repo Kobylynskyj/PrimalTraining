@@ -1,5 +1,6 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
+from modeltranslation.admin import TranslationAdmin
 from .models import User, FitnessClass, Reservation
 
 # Register your models here.
@@ -11,7 +12,7 @@ class UserAdmin(ModelAdmin):
 
 
 @admin.register(FitnessClass)
-class FintnessClassAdmin(ModelAdmin):
+class FintnessClassAdmin(TranslationAdmin):
     list_display = ('title', 'description','price', 'max_capacity', 'created_at')
     search_fields = ('title',)
 

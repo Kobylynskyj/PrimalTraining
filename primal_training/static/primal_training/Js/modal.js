@@ -89,8 +89,8 @@ if (modalForm) {
                         errorMsg.style.fontWeight = '700';
                         errorMsg.style.marginTop = '4px';
                         parentField.appendChild(errorMsg);
-                        const labelText = label ? label.textContent.trim() : 'field';
-                        errorMsg.textContent = ` Please enter ${labelText}`
+                        const errorMessage = input.dataset.error || (label ? label.textContent.trim() : '');
+                        errorMsg.textContent = errorMessage;
                     }
                 } else {
                     input.style.borderColor = ''

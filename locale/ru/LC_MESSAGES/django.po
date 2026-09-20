@@ -92,15 +92,6 @@ msgstr "ЗАБРОНИРОВАТЬ МЕСТО"
 msgid "CONTACT"
 msgstr "КОНТАКТЫ"
 
-#: .\primal_training\templates\base\base.html:44
-#: .\primal_training\templates\contacts_view.html:24
-msgid "Email:"
-msgstr ""
-
-#: .\primal_training\templates\base\base.html:45
-#: .\primal_training\templates\contacts_view.html:25
-msgid "Phone:"
-msgstr ""
 
 # Футер: Часы работы
 #: .\primal_training\templates\base\base.html:50
@@ -247,49 +238,7 @@ msgstr "О НАС"
 msgid "CONTACTS"
 msgstr "КОНТАКТЫ"
 
-#: .\primal_training\templates\reserve_view.html:7
-msgid "BOOK A"
-msgstr ""
 
-#: .\primal_training\templates\reserve_view.html:7
-msgid "SESSION"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:8
-msgid "Available Classes"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:17
-msgid "Places:"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:28
-msgid "No available classes at the moment."
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:39
-msgid "BOOK A SESSION"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:46
-msgid "First Name"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:51
-msgid "Last Name"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:56
-msgid "Email"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:61
-msgid "Phone"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:66
-msgid "Date & Time"
-msgstr ""
 
 #~ msgid "Email: kobylynskyjd@gmail.com"
 #~ msgstr "Email: kobylynskyjd@gmail.com"
@@ -308,3 +257,62 @@ msgstr ""
 
 #~ msgid "Phone: +420777899456"
 #~ msgstr "Телефон: +420777899456"
+
+msgid "BOOK A"
+msgstr "ЗАБРОНИРОВАТЬ"
+
+msgid "SESSION"
+msgstr "ТРЕНИРОВКУ"
+
+msgid "Available Classes"
+msgstr "Доступные занятия"
+
+msgid "Places:"
+msgstr "Мест:"
+
+# Label (великими літерами / First Name)
+msgid "First Name"
+msgstr "ИМЯ"
+
+msgid "Last Name"
+msgstr "ФАМИЛИЯ"
+
+msgid "EMAIL"
+msgstr "ЭЛЕКТРОННАЯ ПОЧТА"
+
+msgid "Phone"
+msgstr "ТЕЛЕФОН"
+
+msgid "Date & Time"
+msgstr "ДАТА И ВРЕМЯ"
+
+
+
+msgid "Email"
+msgstr "Электронная почта"
+
+# Placeholders
+msgid "First name"
+msgstr "Имя"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+
+msgid "Please enter your first name"
+msgstr "Введите имя"
+
+msgid "Please enter your last name"
+msgstr "Введите фамилию"
+
+msgid "Please enter your email"
+msgstr "Введите e-mail"
+
+msgid "Please enter your phone"
+msgstr "Введите номер телефона"
+
+msgid "Please enter your date & time"
+msgstr "Выберите дату и время"
+
+
+

@@ -255,28 +255,54 @@ msgstr "Наразі немає доступних занять."
 msgid "BOOK A SESSION"
 msgstr "ЗАБРОНЮВАТИ ТРЕНУВАННЯ"
 
-#: .\primal_training\templates\reserve_view.html:46
-msgid "First Name"
-msgstr "Ім'я"
 
-#: .\primal_training\templates\reserve_view.html:51
-msgid "Last Name"
-msgstr "Прізвище"
-
-#: .\primal_training\templates\reserve_view.html:56
-msgid "Email"
-msgstr "Email"
-
-#: .\primal_training\templates\reserve_view.html:61
-msgid "Phone"
-msgstr "Телефон"
-
-#: .\primal_training\templates\reserve_view.html:66
-msgid "Date & Time"
-msgstr "Дата та час"
 
 #~ msgid " LIVE BETTER "
 #~ msgstr "ЖИВИ КРАЩЕ"
 
 #~ msgid "TAP INTO YOUR PRIMAL POWER. FORGE A STRONGER YOU."
 #~ msgstr "РОЗКРИЙ СВОЮ ПЕРВИННУ СИЛУ. СТВОРИ СЕБЕ СИЛЬНІШОГО."
+
+
+# Label (написано з великої букви в HTML)
+msgid "First Name"
+msgstr "ІМ'Я"
+
+msgid "Last Name"
+msgstr "ПРІЗВИЩЕ"
+
+# Placeholder (написано з маленької букви в HTML)
+msgid "First name"
+msgstr "Ім'я"
+
+msgid "Last name"
+msgstr "Прізвище"
+
+msgid "EMAIL"
+msgstr "ЕЛЕКТРОННА ПОШТА"
+
+msgid "Email"
+msgstr "Електронна пошта"
+
+msgid "Phone"
+msgstr "ТЕЛЕФОН"
+
+msgid "Date & Time"
+msgstr "ДАТА ТА ЧАС"
+
+msgid "Please enter your first name"
+msgstr "Введіть ім'я"
+
+msgid "Please enter your last name"
+msgstr "Введіть прізвище"
+
+msgid "Please enter your email"
+msgstr "Введіть email"
+
+msgid "Please enter your phone"
+msgstr "Введіть номер телефону"
+
+msgid "Please enter your date & time"
+msgstr "Оберіть дату та час"
+
+

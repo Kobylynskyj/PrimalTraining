@@ -240,54 +240,6 @@ msgstr "O NÁS"
 msgid "CONTACTS"
 msgstr "KONTAKTY"
 
-#: .\primal_training\templates\reserve_view.html:7
-#, fuzzy
-#| msgid "BOOK A SESSION"
-msgid "BOOK A"
-msgstr "REZERVOVAT LEKCI"
-
-#: .\primal_training\templates\reserve_view.html:7
-#, fuzzy
-#| msgid "BOOK A SESSION"
-msgid "SESSION"
-msgstr "REZERVOVAT LEKCI"
-
-#: .\primal_training\templates\reserve_view.html:8
-msgid "Available Classes"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:17
-msgid "Places:"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:28
-msgid "No available classes at the moment."
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:39
-msgid "BOOK A SESSION"
-msgstr "REZERVOVAT LEKCI"
-
-#: .\primal_training\templates\reserve_view.html:46
-msgid "First Name"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:51
-msgid "Last Name"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:56
-msgid "Email"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:61
-msgid "Phone"
-msgstr ""
-
-#: .\primal_training\templates\reserve_view.html:66
-msgid "Date & Time"
-msgstr ""
-
 #, fuzzy
 #~| msgid "LIVE BETTER"
 #~ msgid " LIVE BETTER. "
@@ -307,3 +259,56 @@ msgstr ""
 
 #~ msgid "Phone: +420777899456"
 #~ msgstr "Telefon: +420777899456"
+
+msgid "BOOK A"
+msgstr "REZERVOVAT"
+
+msgid "SESSION"
+msgstr "TRÉNINK"
+
+msgid "Available Classes"
+msgstr "Dostupné lekce"
+
+msgid "Places:"
+msgstr "Místa:"
+
+msgid "First Name"
+msgstr "JMÉNO"
+
+msgid "Last Name"
+msgstr "PŘÍJMENÍ"
+
+msgid "EMAIL"
+msgstr "E-MAIL"
+
+msgid "Phone"
+msgstr "TELEFON"
+
+msgid "Date & Time"
+msgstr "DATUM A ČAS"
+
+# Placeholder (з маленької букви)
+msgid "First name"
+msgstr "Jméno"
+
+msgid "Last name"
+msgstr "Příjmení"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Please enter your first name"
+msgstr "Zadejte jméno"
+
+msgid "Please enter your last name"
+msgstr "Zadejte příjmení"
+
+msgid "Please enter your email"
+msgstr "Zadejte e-mail"
+
+msgid "Please enter your phone"
+msgstr "Zadejte telefonní číslo"
+
+msgid "Please enter your date & time"
+msgstr "Vyberte datum a čas"
+

@@ -54,6 +54,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'unfold',
     'django.contrib.admin',
     'django.contrib.auth',
