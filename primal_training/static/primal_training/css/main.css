@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   list-style: none;
   margin: 0;
@@ -135,7 +136,7 @@ main {
   -webkit-transform: translateY(-8px) rotate(-45deg);
           transform: translateY(-8px) rotate(-45deg);
 }
-@media (max-width: 800px) {
+@media (max-width: 967px) {
   .burger-btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -143,7 +144,7 @@ main {
   }
 }
 
-@media (max-width: 800px) and (min-width: 653px) {
+@media (max-width: 967px) and (min-width: 653px) {
   .Header .Header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -169,6 +170,12 @@ main {
     z-index: 99;
     -webkit-box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
             box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .Header .Header__nav .dropdown {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
   }
   .Header .Header__nav.is-open {
     right: 0;
@@ -223,6 +230,12 @@ main {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
+  .Header .Header__nav .dropdown {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
+  }
   .Header .Header__nav.is-open {
     top: 0;
   }
@@ -249,31 +262,6 @@ main {
     text-decoration: none;
   }
 }
-.language-picker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.language-picker button {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
-  padding: 4px 8px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.language-picker button:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .reserve-title {
   font-size: 64px;
   text-align: center;
@@ -1442,4 +1430,75 @@ iframe {
   .title-primal_tribe {
     font-size: 35px;
   }
+}
+.dropbtn {
+  background-color: #808DFD;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #697AEF;
+  opacity: 1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  /* Замість display: none використовуємо прозорість для підтримки анімації */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px); /* Початкове зміщення трохи вгору */
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+  border-radius: 4px;
+}
+
+.dropdown-content li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0); /* Повертається в початкову позицію */
+}
+
+.show {
+  display: block;
 }

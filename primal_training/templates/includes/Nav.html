@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <a href="{% url 'HOME' %}" class="header__logo">
     <img src="{% static 'primal_training/Images/logo.png' %}" alt="Logo">
 </a>
@@ -10,15 +11,44 @@
         <li class="list_item"><a href="{% url 'ABOUT AS' %}">{% trans 'ABOUT' %}</a></li>
         <li class="list_item"><a href="{% url 'CONTACTS' %}">{% trans 'CONTACTS' %}</a></li>
         <li class="list_item list_item--btn"><a href="{% url 'RESERVE YOUR SPOT' %}">{% trans 'RESERVE YOUR SPOT' %}</a></li>
-    </ul>
-</nav>
-
-<form action="{% url 'set_language' %}" method="post" class="language-picker">
+<div class="dropdown">
+  <!-- Кнопка відкриття -->
+  <button onclick="toggleLangMenu()" class="dropbtn">
+    {% if LANGUAGE_CODE == 'uk' %}Українська UA
+    {% elif LANGUAGE_CODE == 'cs' %}Čeština CS
+    {% elif LANGUAGE_CODE == 'en' %}English EN
+    {% else %}Русский RU{% endif %}
+  </button>
+  <!-- Прихована форма Django -->
+  <form id="custom-lang-form" action="{% url 'set_language' %}" method="post">
     {% csrf_token %}
     <input name="next" type="hidden" value="{{ request.path }}">
-    
-    <button type="submit" name="language" value="en">EN</button>
-    <button type="submit" name="language" value="ru">RU</button>
-    <button type="submit" name="language" value="uk">UA</button>
-    <button type="submit" name="language" value="cs">CZ</button>
-</form>
+    <input id="selected-language-input" type="hidden" name="language" value="">
+  </form>
+
+  <!-- Випадаючий список -->
+  <ul id="lang-menu" class="dropdown-content">
+    <li onclick="submitLang('uk')">
+      <span>Українська</span>
+      <span>UA</span>
+    </li>
+    <li onclick="submitLang('cs')">
+      <span>Čeština</span>
+      <span>CS</span>
+    </li>
+    <li onclick="submitLang('en')">
+      <span>English</span>
+      <span>EN</span>
+    </li>
+    <li onclick="submitLang('ru')">
+      <span>Русский</span>
+      <span>RU</span>
+    </li>
+  </ul>
+</div>
+    </ul>
+
+</nav>
+
+
+<script src="{% static 'primal_training/Js/translatMenu.js' %}"></script>
