@@ -6,6 +6,9 @@ from django.views import View
 from django.utils.dateparse import parse_datetime
 from  django.db.models import Q
 from django.http import JsonResponse
+from django.conf import settings
+from django.core.mail import send_mail
+
 # Create your views here.
 
 class HomePage(TemplateView):
@@ -35,7 +38,7 @@ class ReservationCreateView(View):
         last_name = request.POST.get('last_name')
         email = request.POST.get('email')
         phone = request.POST.get('phone')
-        reser_date= request.POST.get('reser_date')
+        reser_date = request.POST.get('reser_date')
         reser_date = parse_datetime(reser_date) if reser_date else None
 
 
@@ -72,5 +75,34 @@ class ReservationCreateView(View):
             fitness_class=fitness_class,
             reser_date=reser_date
         )
+
+        # === ВІДПРАВКА ЛИСТА АДМІНІСТРАТОРУ 
+        subject = f'New Booking: {fitness_class.title}'
+        message = (
+            f'Hello {name}\n'
+            f'You have received a new training reservation!\n\n'
+            f'Name: {name} {last_name}\n'
+            f'User Email: {email}\n'
+            f'Phone: {phone}\n'
+            f'Training: {fitness_class.title}\n'
+            f'Date & Time: {reser_date}\n'
+            f'Best regards, PrimalTraining 👋'
+        )
+
+        try:
+            send_mail(
+                subject=subject,
+                message=message,
+                from_email='primaltrainingx@gmail.com',
+                recipient_list=[
+                    'primaltrainingx@gmail.com',
+                    email,
+                ],
+                fail_silently=False
+            )
+        except Exception as e:
+            print(f'Email sending error: {e}')
+
+        
 
         return redirect('HOME')
