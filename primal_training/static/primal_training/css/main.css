@@ -668,7 +668,7 @@ a {
   color: black;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 740px) {
   .footer-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
