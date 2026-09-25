@@ -1,0 +1,198 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #EAEFFA; 
+    border-bottom: 1px solid #000000;
+    padding: 16px 40px;
+
+  .Header__nav{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+  }
+
+  .ul_list {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .list_item {
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    // Стилі для кнопки RESERVE YOUR SPOT
+    &--btn {
+      margin-left: 12px;
+
+      a {
+        display: inline-block;
+        background-color: #7B8CFF; 
+        color: #000000;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+
+        &:hover {
+          background-color: #697AEF;
+          opacity: 1;
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+
+  }
+}
+
+
+
+// Burger Menu Button
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+
+  span {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+
+  &.is-active {
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 967px) {
+    display: flex;
+  }
+}
+
+
+@media (max-width: 967px) and (min-width: 653px) {
+  .Header .Header__nav {
+
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background-color: #EAEFFA;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 99;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+
+        .dropdown {
+      order: -1;
+      margin-bottom: 10px;
+    }
+
+    &.is-open {
+      right: 0;
+    }
+
+    .ul_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li a {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 652px) {
+  .Header .Header__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #EAEFFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.4s ease-in-out;
+    z-index: 99;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    .dropdown {
+      order: -1;
+      margin-bottom: 10px;
+    }
+
+    &.is-open {
+      top: 0;
+    }
+
+    .ul_list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li a {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+

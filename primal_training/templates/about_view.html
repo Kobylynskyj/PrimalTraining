@@ -1,0 +1,61 @@
+{% extends "base/base.html" %}
+{% load static%}
+{% load i18n %}
+
+{% block main %}
+    <div class="about-content_title" data-aos="fade-right">
+        <h1 class="about-title"> {% trans 'ABOUT US' %}</h1>
+    </div>
+
+    <section class="about-power" data-aos="fade-up">
+
+        <div class="about-content_power">
+            <h1 class="power_title" data-aos="fade-up">{% trans 'Tap into Your Primal Power. Forge a Stronger You.' %}</h1>
+
+            <div class="power-bottom_text" >
+                <h1 class="power-bottom_title" data-aos="fade-up">{% trans 'OUR VISION' %}</h1>
+
+                <p class="power-bottom_text" data-aos="fade-up"> {% trans 'Primal Training is committed to delivering a training experience rooted in raw strength, functional fitness, and unwavering community support. We empower our members to tap into their primal power, achieve their goals, and live a life of strength, resilience, and unwavering determination.' %}
+                </p>
+            </div>
+        </div>
+            <div class="power-img">
+                <img src="{% static 'primal_training/Images/about_power.jpg' %}" alt="power">
+            </div>
+    </section>
+
+    <section class="about-dynamic" data-aos="fade-up">
+        <div class="dynamic-img">
+            <img src="{% static 'primal_training/Images/about_dynamic.jpg' %}" alt="dynamic">
+        </div>
+        
+
+        <div class="dynamic-content">
+            <h1 class="dynamic-title" data-aos="fade-up"> {% trans 'DYNAMIC OPEN GYM' %}</h1>
+            
+            <div class="dynamic-bottom_text" data-aos="fade-up">
+            {% trans 'At Primal Training, we strip away the fluff and focus on the fundamentals. Our expert coaches guide you through intense, functional workouts designed to build raw strength, resilience, and a body capable of anything.' %}
+            </div>
+        </div>
+    </section>
+
+    <section class="about-power__recconect" data-aos="fade-up">
+    <img src="{% static 'primal_training/images/reconnect.png' %}" alt="Primal Power" class="about-recconect__bg">
+    <div class="about-power__content">
+        <h2 class="about-power__title" data-aos="fade-up">
+            {% trans 'WEVE CREATED A SPACE WHERE YOU CAN RECONNECT WITH YOUR PRIMAL SELF.' %}
+        </h2>
+    </div>
+</section>
+
+<section class="about-believe" data-aos="fade-up">
+    <div class=" believe-content">
+        <p class="about-believe__text" data-aos="fade-up">{% trans 'WHAT WE BELIEVE IN' %}</p>
+        <h1 class="about-believe__title" data-aos="fade-up">{% trans 'JOIN THE PRIMAL TRIBE TODAY!' %}</h1>
+
+        <a href="{% url 'RESERVE YOUR SPOT'%}">
+            <button class="believe-btn" data-aos="fade-up">{% trans 'RESERVE YOUR SPOT' %}</button>
+        </a> 
+    </div>
+</section>
+{% endblock main %}

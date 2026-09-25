@@ -1,0 +1,93 @@
+.Footer{
+    width: 100%;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAEFFA;
+    height: auto;
+    flex-direction: column;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-footer-top{
+    font-size: 36px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.footer-logo img{
+    display: block;
+}
+
+.content-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title-content{
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1,5px;
+}
+
+.email-content-contatct{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.phone-content-contact{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.title-content-contact{
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1,5px;
+}
+
+.hours-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:4px;
+    font-size: 14px;
+
+    span{
+    font-weight: 600;
+    }
+}
+
+
+
+a{
+    color: black;
+}
+
+
+@media (max-width:740px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

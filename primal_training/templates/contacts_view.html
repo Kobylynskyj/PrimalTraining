@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+{% load static%}
+{% load i18n %}
+
+{% block main %}
+    <div class="contacts_touch-title" data-aos="fade-right">
+        <h1 class="title-touch">{% trans 'GET IN' %} <span>{% trans 'TOUCH' %}</span></h1>
+    </div>
+
+    <section class="content-primal_tribe" data-aos="fade-up">
+        <h1 class="title-primal_tribe" data-aos="fade-up">
+            {% trans 'READY TO JOIN THE PRIMAL TRIBE' %}
+        </h1>
+        <a href="{% url 'RESERVE YOUR SPOT'%}" data-aos="fade-up">
+            <button class="button-primal_tribe">{% trans 'BOOK FREE INTRO SESSION' %}</button>
+        </a>
+    </section>
+
+    <section class="contacts-our"data-aos="fade-up">
+        <div class="contacts-content">
+            <div class="block-our" data-aos="fade-right">
+                <h1 class="title-our" data-aos="fade-right">{% trans 'OUR GYM' %}</h1>
+                <p class="text" data-aos="fade-right">{% trans 'Addres Street Rad' %}</p>
+                <p class="text" data-aos="fade-right">{% trans 'Email:' %} primaltrening@icloud.com</p>
+                <p class="text" data-aos="fade-right">{% trans 'Phone:' %} +420777899456</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330311.84376034717!2d4.136743335069051!3d52.013316307944585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c7c9a6ff1e0d%3A0x28b9b21127df8d70!2sPrimal%20Training%20Club!5e1!3m2!1suk!2scz!4v1788274528247!5m2!1suk!2scz" width="600" height="450" style="border:0;" allowfullscreen=""loading="lazy" referrerpolicy="strict-origin-when-cross-origin" data-aos="fade-right"></iframe>
+            </div>
+        </div>
+{% endblock main %}
