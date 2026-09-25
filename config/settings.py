@@ -48,7 +48,7 @@ SECRET_KEY = 'django-insecure-k*a*92+2^y72m8m9=af4z(!-21z#*(tq9mxx(!n#hr4dbh9&#$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['primaltraining.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
