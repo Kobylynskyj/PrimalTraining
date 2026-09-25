@@ -1,0 +1,143 @@
+.contacts_touch-title{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+}
+
+.title-touch{
+    font-size: 49px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+
+    span {
+        color: #808CFD;;
+    }
+}
+
+
+.contacts-our{
+    display: grid;
+    grid-template-columns:  1fr;
+    width: 100%;
+    height: auto;
+    background-color: #E9ECFF;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.contacts-content{
+    width: 100%;
+
+}
+
+.block-our{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-right: 1px solid #333;
+
+}
+
+.title-our{
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+}
+
+.text{
+    font-size: 22px;
+}
+
+iframe{
+    width: 600px;
+    height: 300px;
+}
+
+
+.content-primal_tribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    align-items: center;
+    background-color: #808CFD;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+
+.title-primal_tribe{
+    font-size: 49px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    margin: 0 0 8px 0;
+    color: #000000;
+}
+
+
+.button-primal_tribe{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+
+    &:hover{
+        color: #E9ECFF;
+        background-color: #000000;
+        transform: translateY(-2px);
+        box-shadow: 1px 21px 28px 0px rgba(0, 0, 0, 0.58);
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(0.98); 
+    }
+}
+
+
+@media (max-width:656px) {
+    iframe {
+        height: 350px;
+        width: 450px;
+    }
+}
+
+@media (max-width:520px) {
+    .title-primal_tribe {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:504px) {
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width:405px) {
+    .title-touch {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:400px) {
+    .title-primal_tribe {
+        font-size: 35px;
+    }
+}

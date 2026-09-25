@@ -1,0 +1,146 @@
+
+.reserve-title {
+    font-size: 64px;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+
+    span {
+        color: #5b82e6;
+    }
+}
+
+.reserve-subtitle {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reserve-section {
+    width: 100%;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.reserve-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black; // Для повного контуру
+    background-color: #EEF0FF;
+}
+
+.card {
+    min-height: 480px;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Розштовхує контент і кнопку по краях
+    border-right: solid 1px black;
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-item {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase; // Робить заголовки прописними як на макеті
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.class-description {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.45;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.class-price {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.class-capacity {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.reserve-btn {
+    background-color: #808DFD;
+    padding: 14px 0;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px; // Виправлено кома на крапку
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: #000;
+
+transition: all 0.3s ease-in-out; 
+
+    &:hover {
+        background-color: #000000;
+        color: #FFFFFF;          
+        cursor: pointer;
+        transform: translateY(-2px); 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
+    }
+
+    &:active {
+        transform: translateY(0); 
+    }
+}
+
+
+.modal { display: none; }
+.modal.active { display: block; background: #eee; padding: 20px; }
+
+
+@media (max-width:828px) {
+    .reserve-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-description {
+        border-bottom: 1px solid #000;
+        padding-bottom: 18px;
+    }
+}
+
+
+@media (max-width:540px) {
+    .reserve-title {
+        font-size: 54px;
+    }
+}
+
+
+@media (max-width:456px) {
+    .reserve-title {
+        font-size: 44px;
+    }
+}
+    
