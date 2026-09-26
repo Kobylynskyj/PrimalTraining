@@ -13,6 +13,16 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 import dj_database_url
 import os
+from django.contrib.auth.models import User
+
+try:
+    user = User.objects.get(username='Dima')
+    user.set_password('VIpxKopus2008')  # Вкажіть тут ваш новий пароль
+    user.is_superuser = True
+    user.is_staff = True
+    user.save()
+except Exception:
+    pass
 
 LANGUAGE_CODE = 'uk'
 
@@ -103,7 +113,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite:///db.sqlite3',
+        default=os.environ.get('DATABASE_URL', 'sqlite:///db.sqlite3'),
         conn_max_age=600
     )
 }
