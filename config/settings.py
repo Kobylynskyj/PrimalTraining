@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 import dj_database_url
 import os
+import sys
 
 
 LANGUAGE_CODE = 'uk'
@@ -109,20 +110,6 @@ DATABASES = {
     )
 }
 
-import sys
-if 'runserver' not in sys.argv:
-    try:
-        from django.contrib.auth.models import User
-        if not User.objects.filter(username='Dima').exists():
-            User.objects.create_superuser('Dima', 'admin@example.com', '12345678')
-        else:
-            user = User.objects.get(username='Dima')
-            user.set_password('VIPxKopus2008')
-            user.is_superuser = True
-            user.is_staff = True
-            user.save()
-    except Exception:
-        pass
 
 
 
@@ -202,3 +189,18 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'primaltrainingx@gmail.com'  # Ваша пошта Gmail, з якої надсилатимуться листи
 EMAIL_HOST_PASSWORD = 'niir vbng donz pesn'  # 16-значний пароль додатка від Google
 DEFAULT_FROM_EMAIL = 'PrimalTraining primaltrainingx@gmail.com'
+
+
+if 'runserver' not in sys.argv:
+    try:
+        from django.contrib.auth.models import User
+        if not User.objects.filter(username='Dima').exists():
+            User.objects.create_superuser('Dima', 'admin@example.com', '12345678')
+        else:
+            user = User.objects.get(username='Dima')
+            user.set_password('VIPxKopus2008')
+            user.is_superuser = True
+            user.is_staff = True
+            user.save()
+    except Exception:
+        pass
